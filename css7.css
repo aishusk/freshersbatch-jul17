@@ -1,0 +1,10 @@
+span{
+	font-weight: bold;
+}
+
+p{
+	border-style: solid;
+    border-color: red;
+	outline: #00FF00 dotted thick;
+	
+}

@@ -1,0 +1,23 @@
+body{
+	background-color:cyan;
+}
+
+h2 {
+    text-decoration: line-through;
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+@keyframes example {
+    from {background-color: black; color: white }
+    to {background-color: white; color: black}
+}
+
+h4 {
+	animation-name: example;
+    animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in;
+}

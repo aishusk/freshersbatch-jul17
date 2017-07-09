@@ -1,0 +1,21 @@
+
+#upper{
+	text-transform:uppercase;
+	
+}
+#lower
+{
+	text-transform:lowercase
+
+	
+}
+	body
+	{
+		background-color:lightcyan;
+		font-family:gotum,sans-serif
+
+	}
+p.smaller
+{
+	font-size:15
+}
