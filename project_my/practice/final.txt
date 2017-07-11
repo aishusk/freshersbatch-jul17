@@ -1,0 +1,441 @@
+
+sureshkumar_a@Aishwarya-SK MINGW64 ~
+$ cd /d
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d
+$ mkdir project_dir
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d
+$ cd project_dir
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir
+$ git init
+Initialized empty Git repository in D:/project_dir/.git/
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir (master)
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        new 1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir (master)
+$ git add index.html
+fatal: pathspec 'index.html' did not match any files
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir (master)
+$ git add index.html
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir (master)
+$ git commit -m index.html
+[master (root-commit) 461f866] index.html
+ 1 file changed, 5 insertions(+)
+ create mode 100644 index.html
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir (master)
+$ touch .gitignore
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .gitignore
+        info.txt
+        new 1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir (master)
+$ git commit -m "index"
+On branch master
+Untracked files:
+        .gitignore
+        info.txt
+
+nothing added to commit but untracked files present
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir (master)
+$ git add index.html
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir (master)
+$ git checkout head index.html
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir (master)
+$ git my-add index.html
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir (master)
+$ mkdir assignments
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir (master)
+$ cd assignments
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (master)
+$ git add README.txt
+fatal: pathspec 'README.txt' did not match any files
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        ../.gitignore
+        ./
+        ../info.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (master)
+$ git add README.txt
+fatal: pathspec 'README.txt' did not match any files
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        ./
+        ../info.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (master)
+$ git add .
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (master)
+$ git commit
+Aborting commit due to empty commit message.
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (master)
+$ git commit -m "first "
+[master 13a4b41] first
+ 1 file changed, 1 insertion(+)
+ create mode 100644 assignments/README.txt.txt
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (master)
+$ git checkout -b html-assignmments
+Switched to a new branch 'html-assignmments'
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (html-assignmments)
+$ git add html1.html
+fatal: pathspec 'html1.html' did not match any files
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (html-assignmments)
+$ git add html1.html
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (html-assignmments)
+$ git commit -m "html1"
+[html-assignmments d4e034a] html1
+ 1 file changed, 1 insertion(+)
+ create mode 100644 assignments/html1.html
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (html-assignmments)
+$ git add html1.htm
+fatal: pathspec 'html1.htm' did not match any files
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (html-assignmments)
+$ git add html1.html
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (html-assignmments)
+$ git commit -m "html2"
+[html-assignmments d4a66af] html2
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (html-assignmments)
+$ git checkout master
+Switched to branch 'master'
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (master)
+$ git add README.txt
+fatal: pathspec 'README.txt' did not match any files
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (master)
+$ git add .
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (master)
+$ git commit -m "readme1
+> "
+[master 1a7ca19] readme1
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (master)
+$ git checkout html-assignments
+error: pathspec 'html-assignments' did not match any file(s) known to git.
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (master)
+$ git checkout html-assignmments
+Switched to branch 'html-assignmments'
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (html-assignmments)
+$ git add html1.html
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (html-assignmments)
+$ git commit -m "modified"
+[html-assignmments c2e2b07] modified
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (html-assignmments)
+$ git checkout master
+Switched to branch 'master'
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (master)
+$ git merge html-assignmments
+Merge made by the 'recursive' strategy.
+ assignments/html1.html | 2 ++
+ 1 file changed, 2 insertions(+)
+ create mode 100644 assignments/html1.html
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (master)
+$ git hist
+*   f29737c2017-07-06|Merge branch 'html-assignmments' (HEAD -> master)[Aishwarya Sureshkumar]
+|\
+| * c2e2b072017-07-06|modified (html-assignmments)[Aishwarya Sureshkumar]
+| * d4a66af2017-07-06|html2[Aishwarya Sureshkumar]
+| * d4e034a2017-07-06|html1[Aishwarya Sureshkumar]
+* | 1a7ca192017-07-06|readme1[Aishwarya Sureshkumar]
+|/
+* 13a4b412017-07-06|first[Aishwarya Sureshkumar]
+* 461f8662017-07-06|index.html[Aishwarya Sureshkumar]
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (master)
+$ git branch -D html-assignmments
+Deleted branch html-assignmments (was c2e2b07).
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (master)
+$ git checkout -b css-assignments
+Switched to a new branch 'css-assignments'
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (css-assignments)
+$ git checkout css-assignments
+Already on 'css-assignments'
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (css-assignments)
+$ git add css1.html
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (css-assignments)
+$ git commit -m "css"
+[css-assignments 85ae48c] css
+ 1 file changed, 1 insertion(+)
+ create mode 100644 assignments/css1.html
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (css-assignments)
+$ git add .
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (css-assignments)
+$ git commit -m "css1"
+[css-assignments 69f9866] css1
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (css-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (master)
+$ git add .
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (master)
+$ git commit -m "modifies read"
+[master 7b40f4e] modifies read
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (master)
+$ git checkout css-assignments
+Switched to branch 'css-assignments'
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (css-assignments)
+$ git add css1.html
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (css-assignments)
+$ git commit -m "css1 again"
+[css-assignments e349221] css1 again
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (css-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (master)
+$ git merge css-assignments
+Auto-merging assignments/README.txt.txt
+CONFLICT (content): Merge conflict in assignments/README.txt.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (master|MERGING)
+$ git merge css-assignments
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (master|MERGING)
+$ git add README.txt
+fatal: pathspec 'README.txt' did not match any files
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (master|MERGING)
+$ git merge -abort
+error: did you mean `--abort` (with two dashes ?)
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (master|MERGING)
+$ git merge --abort
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (master)
+$ git merge css-assignments
+Auto-merging assignments/README.txt.txt
+CONFLICT (content): Merge conflict in assignments/README.txt.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (master|MERGING)
+$ git add README.txt
+fatal: pathspec 'README.txt' did not match any files
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (master|MERGING)
+$ git add .
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (master|MERGING)
+$ git commit -m "manual"
+[master 7bbdb7d] manual
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (master)
+$ git branch -D css-assignments
+Deleted branch css-assignments (was e349221).
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (master)
+$ git checkout -b js-assignments
+Switched to a new branch 'js-assignments'
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (js-assignments)
+$ git add js1.html
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (js-assignments)
+$ git commit -m "js1"
+[js-assignments 1dd07e6] js1
+ 1 file changed, 1 insertion(+)
+ create mode 100644 assignments/js1.html
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (js-assignments)
+$ git add .
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (js-assignments)
+$ git commit -m "js2"
+[js-assignments 4870f4b] js2
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (js-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (master)
+$ git add .
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (master)
+$ git commit -m "js3"
+[master 57e393b] js3
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (master)
+$ git checkout js-assignments
+Switched to branch 'js-assignments'
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (js-assignments)
+$ git add .
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (js-assignments)
+$ git commit -m "js changes"
+[js-assignments b7e4702] js changes
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (js-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (master)
+$ git merge js-assignments
+Auto-merging assignments/README.txt.txt
+CONFLICT (content): Merge conflict in assignments/README.txt.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (master|MERGING)
+$ git add .
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (master|MERGING)
+$ git commit -m "manual2"
+[master 05ba834] manual2
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (master)
+$ git branch -D js-assignments
+Deleted branch js-assignments (was b7e4702).
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (master)
+$ git clone https://github.com/aishusk/freshersbatch-jul17.git
+Cloning into 'freshersbatch-jul17'...
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (master)
+$ git push -u origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (master)
+$ git remote add origin https://github.com/aishusk/freshersbatch-jul17.git
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (master)
+$ git push -u origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com/': aishusk
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/aishusk/freshersbatch-jul17.git/'
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (master)
+$ git push -u origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com/': aishusk
+To https://github.com/aishusk/freshersbatch-jul17.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/aishusk/freshersbatch-jul17.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (master)
+$ https://github.com/aishusk/freshersbatch-jul17.git
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments (master)
+$ cd freshersbatch-jul17
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments/freshersbatch-jul17 (master)
+$ git fetch
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments/freshersbatch-jul17 (master)
+$ git push
+Everything up-to-date
+
+sureshkumar_a@Aishwarya-SK MINGW64 /d/project_dir/assignments/freshersbatch-jul17 (master)
+$
